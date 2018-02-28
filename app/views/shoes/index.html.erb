@@ -1,8 +1,11 @@
 <h1> Shoes </h1>
 <p><%= link_to 'Add New Shoe', new_shoe_path %></p>
-<% @shoes.each do |shoe| %>
+<div class="shoes">
+
+  <% @shoes.each do |shoe| %>
   <h5><%= shoe.make %></h5>
   <button><%= link_to 'View', shoe_path(shoe) %></button>
   <button><%= link_to 'Edit', edit_shoe_path(shoe) %></button>
   <button><%= link_to 'Delete', shoe, method: :delete %></button>
-<% end %>
+  <% end %>
+</div>
