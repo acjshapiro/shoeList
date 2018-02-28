@@ -1,0 +1,16 @@
+<h1>Add New Shoe</h1>
+<%= form_for @shoe do |f| %>
+  <%= f.label :make %>
+  <%= f.text_field :make %>
+
+  <%= f.label :model %>
+  <%= f.text_field :model %>
+
+  <%= f.label :color %>
+  <%= f.text_field :color %>
+
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+
+  <%= f.submit %>
+<% end %>
